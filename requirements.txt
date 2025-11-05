@@ -1,0 +1,21 @@
+# Temel LangChain kütüphaneleri
+langchain
+langchain-openai # LLM (analiz) için OpenAI'a hala ihtiyacımız var
+langchain-community # HuggingFace ve ChromaDB entegrasyonları için
+
+# Vektör Veritabanı
+chromadb
+
+# Lokal Embedding Modelleri için
+sentence-transformers # HuggingFace modellerini çalıştırmak için
+
+# PDF Doküman Okuyucu
+pymupdf # PDF'leri hızlı okumak için (PyPDF'ten daha iyidir)
+
+# Çevre Değişkenleri ve Ayarlar
+python-dotenv
+pydantic
+sqlalchemy # Çağrı kayıtlarını tutmak için (main.py'de kullanacağız)
+
+openpyxl # Excel dosyalarını işlemek için
+pandas
