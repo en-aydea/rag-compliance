@@ -13,7 +13,7 @@ __pycache__/
 .ipynb_checkpoints/
 logs/
 database.db
-/db/chroma_db/
+/db/
 bank_compliance.db
 *.sqlite3
 

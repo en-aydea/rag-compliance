@@ -7,7 +7,6 @@ from src.models import engine, create_db_and_tables, CallInput, SessionLocal
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 log = logging.getLogger(__name__)
 
-# Ayarlar (Kullanıcıdan alınan bilgilere göre - DÜZELTİLDİ)
 XLSX_PATH = "data/new_calls.xlsx" # Düzeltme: .xlsx yolu
 TRANSCRIPT_COLUMN_NAME = "Transkript" 
 CALL_ID_COLUMN_NAME = "Çağrı ID" 
@@ -19,8 +18,6 @@ def load_xlsx_to_db():
     
     log.info(f"'{XLSX_PATH}' dosyasından veriler okunuyor...")
     try:
-        # --- DÜZELTME BURADA ---
-        # pd.read_csv yerine pd.read_excel kullanıyoruz
         df = pd.read_excel(XLSX_PATH)
     except FileNotFoundError:
         log.error(f"HATA: '{XLSX_PATH}' dosyası bulunamadı.")
