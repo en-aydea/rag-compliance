@@ -1,3 +1,6 @@
+/.venv/
+venv/
+*.venv
 .env
 data/
 __pycache__/    
@@ -10,7 +13,9 @@ __pycache__/
 .ipynb_checkpoints/
 logs/
 database.db
-
+/db/chroma_db/
+bank_compliance.db
+*.sqlite3
 
 *.xlsx
 *.xls
